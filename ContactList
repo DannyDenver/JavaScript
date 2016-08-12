@@ -1,0 +1,35 @@
+var friends={}
+
+friends.bill={
+    firstName: "Bill",
+    lastName: "Bow",
+    number: "303-434-5423",
+    address: ["615 E 10th Ave", "Apt.9", "Denver, CO, 80203"]
+
+}
+    
+friends.steve={
+    firstName: "Steve",
+    lastName: "Rones",
+    number: "345-232-5434",
+    address: ["615 E 10th Ave", "Apt.9", "Denver, CO, 80203"]
+    
+}
+friends.chris={
+    firstName: "Chris",
+    lastName: "Wright",
+    number: "654-324-5678",
+    address: ["615 E 10th Ave", "Apt.9", "Denver, CO, 80203"]
+    }
+    
+var list= function(friends){
+    for(var friend in friends){
+        console.log(friend)}}
+var search= function(name){
+    for(var key in friends){
+        if(name===friends[key].firstName){
+            console.log(friends[key]);
+            return friends[key];
+            }
+    }
+}
